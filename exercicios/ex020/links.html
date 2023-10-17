@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+             color: crimson;
+             text-decoration: none;
+             font-weight: bold;
+        }
+
+        a:visited {
+            color: crimson;
+        }
+
+        a:hover {
+            color: black;
+            text-decoration: darkred;
+        }
+
+        a:active {
+            color: gold;
+        }
+
+        .especial {
+            background-color: darkslategray;
+        }
+
+        .especial::before  {
+            content: ☛;
+        }
+
+        .especial::after {
+            content: ☚;
+        }
+    </style>
+</head>
+<body>
+    <h1>Personalizando links</h1>
+    <ul>
+        <li><a href="https://www.mysapparel.com.br/">loja</a></li>
+        <li><a href="https://babyblackshop.com.br/angel/powerpuff-girls/" class="especial">loja bby</a></li>
+        <li><a href="https://www.murythebrand.com.br/shop-all">loja muly</a></li>
+    </ul>
+</body>
+</html>
